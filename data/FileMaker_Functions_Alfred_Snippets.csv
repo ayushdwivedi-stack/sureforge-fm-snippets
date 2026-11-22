@@ -1,158 +1,158 @@
 Name,Keyword,Snippet,Category
-FM Char,;fmchar,Char (  ),Text
-FM Code,;fmcode,Code (  ),Text
-FM Exact,;fmexact,Exact (  ),Text
+FM Char,;fmchar,Char ( number ),Text
+FM Code,;fmcode,Code ( text ),Text
+FM Exact,;fmexact,Exact ( originalText ; comparisonText ),Text
 FM Filter,;fmfilter,Filter ( textToFilter ; filterText ),Text
 FM FilterValues,;fmfiltervals,FilterValues ( textToFilter ; filterValues ),Text
-FM GetAsCSS,;fmgetascss,GetAsCSS (  ),Text
+FM GetAsCSS,;fmgetascss,GetAsCSS ( text ),Text
 FM GetAsDate,;fmasdate,GetAsDate ( expression ),Text
 FM GetAsNumber,;fmasnum,GetAsNumber ( expression ),Text
-FM GetAsSVG,;fmgetassvg,GetAsSVG (  ),Text
+FM GetAsSVG,;fmgetassvg,GetAsSVG ( text ),Text
 FM GetAsText,;fmastext,GetAsText ( expression ),Text
-FM GetAsTime,;fmgetastime,GetAsTime (  ),Text
+FM GetAsTime,;fmgetastime,GetAsTime ( text ),Text
 FM GetAsTimestamp,;fmasts,GetAsTimestamp ( expression ),Text
-FM GetAsURLEncoded,;fmgetasurlencoded,GetAsURLEncoded (  ),Text
+FM GetAsURLEncoded,;fmgetasurlencoded,GetAsURLEncoded ( text ),Text
 FM GetValue,;fmgetvalue,GetValue ( listOfValues ; valueNumber ),Text
 FM Left,;fmleft,Left ( text ; numberOfCharacters ),Text
-FM LeftValues,;fmleftvalues,LeftValues (  ),Text
+FM LeftValues,;fmleftvalues,LeftValues ( text ; numberOfValues ),Text
 FM LeftWords,;fmleftwords,LeftWords ( text ; numberOfWords ),Text
-FM Length,;fmlength,Length (  ),Text
+FM Length,;fmlength,Length ( field ),Text
 FM Lower,;fmlower,Lower ( text ),Text
 FM Middle,;fmmid,Middle ( text ; start ; numberOfCharacters ),Text
-FM MiddleValues,;fmmiddlevalues,MiddleValues (  ),Text
-FM MiddleWords,;fmmiddlewords,MiddleWords (  ),Text
+FM MiddleValues,;fmmiddlevalues,MiddleValues ( text ; startingValue ; numberOfValues ),Text
+FM MiddleWords,;fmmiddlewords,MiddleWords ( text ; startingWord ; numberOfWords ),Text
 FM PatternCount,;fmpattern,PatternCount ( text ; searchString ),Text
 FM Position,;fmpos,Position ( text ; searchString ; start ; occurrence ),Text
 FM Proper,;fmproper,Proper ( text ),Text
 FM Quote,;fmquote,Quote ( text ),Text
-FM Replace,;fmreplace,Replace (  ),Text
+FM Replace,;fmreplace,Replace ( text ; start ; numberOfCharacters ; replacementText ),Text
 FM Right,;fmright,Right ( text ; numberOfCharacters ),Text
-FM RightValues,;fmrightvalues,RightValues (  ),Text
-FM RightWords,;fmrightwords,RightWords (  ),Text
-FM SerialIncrement,;fmserialincrement,SerialIncrement (  ),Text
+FM RightValues,;fmrightvalues,RightValues ( text ; numberOfValues ),Text
+FM RightWords,;fmrightwords,RightWords ( text ; numberOfWords ),Text
+FM SerialIncrement,;fmserialincrement,SerialIncrement ( text ; incrementBy ),Text
 FM SortValues,;fmsortvals,SortValues ( listOfValues ; dataType ; locale ),Text
 FM Substitute,;fmsub,Substitute ( text ; [ searchString ; replacementString ] ),Text
 FM Trim,;fmtrim,Trim ( text ),Text
-FM TrimAll,;fmtrimall,TrimAll (  ),Text
+FM TrimAll,;fmtrimall,TrimAll ( text ; trimSpaces ; trimType ),Text
 FM UniqueValues,;fmunique,UniqueValues ( listOfValues ),Text
 FM Upper,;fmupper,Upper ( text ),Text
 FM ValueCount,;fmvaluecount,ValueCount ( listOfValues ),Text
-FM WordCount,;fmwordcount,WordCount (  ),Text
-FM RGB,;fmrgb,RGB (  ),Text Formatting
-FM TextColor,;fmtextcolor,TextColor (  ),Text Formatting
-FM TextColorRemove,;fmtextcolorremove,TextColorRemove (  ),Text Formatting
-FM TextFont,;fmtextfont,TextFont (  ),Text Formatting
-FM TextFontRemove,;fmtextfontremove,TextFontRemove (  ),Text Formatting
-FM TextFormatRemove,;fmtextformatremove,TextFormatRemove (  ),Text Formatting
-FM TextSize,;fmtextsize,TextSize (  ),Text Formatting
-FM TextSizeRemove,;fmtextsizeremove,TextSizeRemove (  ),Text Formatting
-FM TextStyleAdd,;fmtextstyleadd,TextStyleAdd (  ),Text Formatting
-FM TextStyleRemove,;fmtextstyleremove,TextStyleRemove (  ),Text Formatting
+FM WordCount,;fmwordcount,WordCount ( text ),Text
+FM RGB,;fmrgb,RGB ( red ; green ; blue ),Text Formatting
+FM TextColor,;fmtextcolor,TextColor ( text ; RGB ( red ; green ; blue ) ),Text Formatting
+FM TextColorRemove,;fmtextcolorremove,TextColorRemove ( text ),Text Formatting
+FM TextFont,;fmtextfont,TextFont ( text ; fontName { ; fontScript } ),Text Formatting
+FM TextFontRemove,;fmtextfontremove,TextFontRemove ( text { ; fontScript } ),Text Formatting
+FM TextFormatRemove,;fmtextformatremove,TextFormatRemove ( text ),Text Formatting
+FM TextSize,;fmtextsize,TextSize ( text ; fontSize ),Text Formatting
+FM TextSizeRemove,;fmtextsizeremove,TextSizeRemove ( text ),Text Formatting
+FM TextStyleAdd,;fmtextstyleadd,TextStyleAdd ( text ; style ),Text Formatting
+FM TextStyleRemove,;fmtextstyleremove,TextStyleRemove ( text ; style ),Text Formatting
 FM Abs,;fmabs,Abs ( number ),Number
 FM Ceiling,;fmceil,Ceiling ( number ),Number
-FM Combination,;fmcombination,Combination (  ),Number
-FM Div,;fmdiv,Div (  ),Number
-FM Exp,;fmexp,Exp (  ),Number
-FM Factorial,;fmfactorial,Factorial (  ),Number
+FM Combination,;fmcombination,Combination ( numberOfItems ; numberInSet ),Number
+FM Div,;fmdiv,Div ( givenNumber ; divisor ),Number
+FM Exp,;fmexp,Exp ( number ),Number
+FM Factorial,;fmfactorial,Factorial ( number ),Number
 FM Floor,;fmfloor,Floor ( number ),Number
-FM Int,;fmint,Int (  ),Number
-FM Lg,;fmlg,Lg (  ),Number
-FM Ln,;fmln,Ln (  ),Number
-FM Log,;fmlog,Log (  ),Number
+FM Int,;fmint,Int ( number ),Number
+FM Lg,;fmlg,Lg ( number ),Number
+FM Ln,;fmln,Ln ( number ),Number
+FM Log,;fmlog,Log ( number ),Number
 FM Mod,;fmmod,Mod ( number ; divisor ),Number
 FM Random,;fmrandom,Random,Number
 FM Round,;fmround,Round ( number ; precision ),Number
-FM SetPrecision,;fmsetprecision,SetPrecision (  ),Number
-FM Sign,;fmsign,Sign (  ),Number
-FM Sqrt,;fmsqrt,Sqrt (  ),Number
-FM Truncate,;fmtruncate,Truncate (  ),Number
+FM SetPrecision,;fmsetprecision,SetPrecision ( expression ; precision ),Number
+FM Sign,;fmsign,Sign ( number ),Number
+FM Sqrt,;fmsqrt,Sqrt ( number ),Number
+FM Truncate,;fmtruncate,Truncate ( number ; numberOfDigits ),Number
 FM Date,;fmdatefn,Date ( month ; day ; year ),Date
-FM Day,;fmday,Day (  ),Date
-FM DayName,;fmdayname,DayName (  ),Date
-FM DayOfWeek,;fmdayofweek,DayOfWeek (  ),Date
-FM DayOfYear,;fmdayofyear,DayOfYear (  ),Date
-FM Month,;fmmonth,Month (  ),Date
-FM MonthName,;fmmonthname,MonthName (  ),Date
-FM WeekOfYear,;fmweekofyear,WeekOfYear (  ),Date
-FM WeekOfYearFiscal,;fmweekofyearfiscal,WeekOfYearFiscal (  ),Date
-FM Year,;fmyear,Year (  ),Date
-FM Hour,;fmhour,Hour (  ),Time
-FM Minute,;fmminute,Minute (  ),Time
-FM Seconds,;fmseconds,Seconds (  ),Time
+FM Day,;fmday,Day ( date ),Date
+FM DayName,;fmdayname,DayName ( date ),Date
+FM DayOfWeek,;fmdayofweek,DayOfWeek ( date ),Date
+FM DayOfYear,;fmdayofyear,DayOfYear ( date ),Date
+FM Month,;fmmonth,Month ( date ),Date
+FM MonthName,;fmmonthname,MonthName ( date ),Date
+FM WeekOfYear,;fmweekofyear,WeekOfYear ( date ),Date
+FM WeekOfYearFiscal,;fmweekofyearfiscal,WeekOfYearFiscal ( date ; startingDay ),Date
+FM Year,;fmyear,Year ( date ),Date
+FM Hour,;fmhour,Hour ( time ),Time
+FM Minute,;fmminute,Minute ( time ),Time
+FM Seconds,;fmseconds,Seconds ( time ),Time
 FM Time,;fmtimefn,Time ( hours ; minutes ; seconds ),Time
 FM Timestamp,;fmtimestamp,Timestamp ( date ; time ),Timestamp
-FM Base64Decode,;fmbase64decode,Base64Decode (  ),Container
-FM Base64Encode,;fmbase64encode,Base64Encode (  ),Container
-FM Base64EncodeRFC,;fmbase64encoderfc,Base64EncodeRFC (  ),Container
-FM CryptAuthCode,;fmcryptauthcode,CryptAuthCode (  ),Container
-FM CryptDecrypt,;fmcryptdecrypt,CryptDecrypt (  ),Container
-FM CryptDecryptBase64,;fmcryptdecryptbase64,CryptDecryptBase64 (  ),Container
-FM CryptDigest,;fmcryptdigest,CryptDigest (  ),Container
-FM CryptEncrypt,;fmcryptencrypt,CryptEncrypt (  ),Container
-FM CryptEncryptBase64,;fmcryptencryptbase64,CryptEncryptBase64 (  ),Container
-FM CryptGenerateSignature,;fmcryptgeneratesignature,CryptGenerateSignature (  ),Container
-FM CryptVerifySignature,;fmcryptverifysignature,CryptVerifySignature (  ),Container
-FM GetContainerAttribute,;fmgetcontainerattribute,GetContainerAttribute (  ),Container
-FM GetHeight,;fmgetheight,GetHeight (  ),Container
-FM GetLiveText,;fmgetlivetext,GetLiveText (  ),Container
-FM GetLiveTextAsJSON,;fmgetlivetextasjson,GetLiveTextAsJSON (  ),Container
-FM GetTextFromPDF,;fmgettextfrompdf,GetTextFromPDF (  ),Container
-FM GetThumbnail,;fmgetthumbnail,GetThumbnail (  ),Container
-FM GetWidth,;fmgetwidth,GetWidth (  ),Container
-FM HexDecode,;fmhexdecode,HexDecode (  ),Container
-FM HexEncode,;fmhexencode,HexEncode (  ),Container
-FM ReadQRCode,;fmreadqrcode,ReadQRCode (  ),Container
+FM Base64Decode,;fmbase64decode,Base64Decode ( data { ; fileNameWithExtension } ),Container
+FM Base64Encode,;fmbase64encode,Base64Encode ( data ),Container
+FM Base64EncodeRFC,;fmbase64encoderfc,Base64EncodeRFC ( rfcNumber ; data ),Container
+FM CryptAuthCode,;fmcryptauthcode,CryptAuthCode ( data ; algorithm ; key ),Container
+FM CryptDecrypt,;fmcryptdecrypt,CryptDecrypt ( container ; key ),Container
+FM CryptDecryptBase64,;fmcryptdecryptbase64,CryptDecryptBase64 ( key ; text ),Container
+FM CryptDigest,;fmcryptdigest,CryptDigest ( data ; algorithm ),Container
+FM CryptEncrypt,;fmcryptencrypt,CryptEncrypt ( key ; data ),Container
+FM CryptEncryptBase64,;fmcryptencryptbase64,CryptEncryptBase64 ( key ; text ),Container
+FM CryptGenerateSignature,;fmcryptgeneratesignature,CryptGenerateSignature ( data ; algorithm ; privateKey { ; keyPassword } ),Container
+FM CryptVerifySignature,;fmcryptverifysignature,CryptVerifySignature ( data ; algorithm ; publicKey ; signature ),Container
+FM GetContainerAttribute,;fmgetcontainerattribute,GetContainerAttribute ( sourceField ; attributeName ),Container
+FM GetHeight,;fmgetheight,GetHeight ( sourceField ),Container
+FM GetLiveText,;fmgetlivetext,GetLiveText ( container ; language ),Container
+FM GetLiveTextAsJSON,;fmgetlivetextasjson,GetLiveTextAsJSON ( container ; language ),Container
+FM GetTextFromPDF,;fmgettextfrompdf,GetTextFromPDF ( sourceField { ; pageNumber } ),Container
+FM GetThumbnail,;fmgetthumbnail,GetThumbnail ( sourceField ; width ; height ),Container
+FM GetWidth,;fmgetwidth,GetWidth ( sourceField ),Container
+FM HexDecode,;fmhexdecode,HexDecode ( data { ; fileNameWithExtension } ),Container
+FM HexEncode,;fmhexencode,HexEncode ( data ),Container
+FM ReadQRCode,;fmreadqrcode,ReadQRCode ( sourceField ),Container
 FM TextDecode,;fmtextdec,TextDecode ( container ; encoding ),Container
 FM TextEncode,;fmtextenc,TextEncode ( text ; encoding ; lineEndings ),Container
-FM VerifyContainer,;fmverifycontainer,VerifyContainer (  ),Container
-FM DayNameJ,;fmdaynamej,DayNameJ (  ),Japanese
-FM Furigana,;fmfurigana,Furigana (  ),Japanese
-FM Hiragana,;fmhiragana,Hiragana (  ),Japanese
-FM KanaHankaku,;fmkanahankaku,KanaHankaku (  ),Japanese
-FM KanaZenkaku,;fmkanazenkaku,KanaZenkaku (  ),Japanese
-FM KanjiNumeral,;fmkanjinumeral,KanjiNumeral (  ),Japanese
-FM Katakana,;fmkatakana,Katakana (  ),Japanese
-FM MonthNameJ,;fmmonthnamej,MonthNameJ (  ),Japanese
-FM NumToJText,;fmnumtojtext,NumToJText (  ),Japanese
-FM RomanHankaku,;fmromanhankaku,RomanHankaku (  ),Japanese
-FM RomanZenkaku,;fmromanzenkaku,RomanZenkaku (  ),Japanese
-FM YearName,;fmyearname,YearName (  ),Japanese
-FM JSONDeleteElement,;fmjsondeleteelement,JSONDeleteElement (  ),JSON
-FM JSONFormatElements,;fmjsonformatelements,JSONFormatElements (  ),JSON
-FM JSONGetElement,;fmjsongetelement,JSONGetElement (  ),JSON
-FM JSONGetElementType,;fmjsongetelementtype,JSONGetElementType (  ),JSON
-FM JSONListKeys,;fmjsonlistkeys,JSONListKeys (  ),JSON
-FM JSONListValues,;fmjsonlistvalues,JSONListValues (  ),JSON
-FM JSONMakeArray,;fmjsonmakearray,JSONMakeArray (  ),JSON
-FM JSONParse,;fmjsonparse,JSONParse (  ),JSON
-FM JSONParsedState,;fmjsonparsedstate,JSONParsedState (  ),JSON
-FM JSONSetElement,;fmjsonsetelement,JSONSetElement (  ),JSON
+FM VerifyContainer,;fmverifycontainer,VerifyContainer ( field ),Container
+FM DayNameJ,;fmdaynamej,DayNameJ ( date ),Japanese
+FM Furigana,;fmfurigana,Furigana ( text ),Japanese
+FM Hiragana,;fmhiragana,Hiragana ( text ),Japanese
+FM KanaHankaku,;fmkanahankaku,KanaHankaku ( text ),Japanese
+FM KanaZenkaku,;fmkanazenkaku,KanaZenkaku ( text ),Japanese
+FM KanjiNumeral,;fmkanjinumeral,KanjiNumeral ( number ),Japanese
+FM Katakana,;fmkatakana,Katakana ( text ),Japanese
+FM MonthNameJ,;fmmonthnamej,MonthNameJ ( date ),Japanese
+FM NumToJText,;fmnumtojtext,NumToJText ( number ; figure ; separator ),Japanese
+FM RomanHankaku,;fmromanhankaku,RomanHankaku ( text ),Japanese
+FM RomanZenkaku,;fmromanzenkaku,RomanZenkaku ( text ),Japanese
+FM YearName,;fmyearname,YearName ( date ; format ),Japanese
+FM JSONDeleteElement,;fmjsondeleteelement,JSONDeleteElement ( json ; keyOrIndexOrPath ),JSON
+FM JSONFormatElements,;fmjsonformatelements,JSONFormatElements ( json ),JSON
+FM JSONGetElement,;fmjsongetelement,JSONGetElement ( json ; keyOrIndexOrPath ),JSON
+FM JSONGetElementType,;fmjsongetelementtype,JSONGetElementType ( json ; keyOrIndexOrPath ),JSON
+FM JSONListKeys,;fmjsonlistkeys,JSONListKeys ( json ; keyOrIndexOrPath ),JSON
+FM JSONListValues,;fmjsonlistvalues,JSONListValues ( json ; keyOrIndexOrPath ),JSON
+FM JSONMakeArray,;fmjsonmakearray,JSONMakeArray ( values ; separator ; type ),JSON
+FM JSONParse,;fmjsonparse,JSONParse ( json ),JSON
+FM JSONParsedState,;fmjsonparsedstate,JSONParsedState ( json ),JSON
+FM JSONSetElement,;fmjsonsetelement,JSONSetElement ( json ; keyOrIndexOrPath ; value ; type ),JSON
 FM Average,;fmavg,Average ( field {; field...} ),Aggregate
 FM Count,;fmcount,Count ( field {; field...} ),Aggregate
 FM List,;fmlist,List ( value1 ; value2 ; value3 ),Aggregate
 FM Max,;fmmax,Max ( number1 ; number2 ; number3 ),Aggregate
 FM Min,;fmmin,Min ( number1 ; number2 ; number3 ),Aggregate
-FM StDev,;fmstdev,StDev (  ),Aggregate
-FM StDevP,;fmstdevp,StDevP (  ),Aggregate
+FM StDev,;fmstdev,StDev ( field { ; field... } ),Aggregate
+FM StDevP,;fmstdevp,StDevP ( field { ; field... } ),Aggregate
 FM Sum,;fmsum,Sum ( field {; field...} ),Aggregate
-FM Variance,;fmvariance,Variance (  ),Aggregate
-FM VarianceP,;fmvariancep,VarianceP (  ),Aggregate
-FM Extend,;fmextend,Extend (  ),Repeating
-FM GetRepetition,;fmgetrepetition,GetRepetition (  ),Repeating
-FM Last,;fmlast,Last (  ),Repeating
-FM FV,;fmfv,FV (  ),Financial
-FM NPV,;fmnpv,NPV (  ),Financial
-FM PMT,;fmpmt,PMT (  ),Financial
-FM PV,;fmpv,PV (  ),Financial
-FM Acos,;fmacos,Acos (  ),Trigonometric
-FM Asin,;fmasin,Asin (  ),Trigonometric
-FM Atan,;fmatan,Atan (  ),Trigonometric
-FM Cos,;fmcos,Cos (  ),Trigonometric
-FM Degrees,;fmdegrees,Degrees (  ),Trigonometric
+FM Variance,;fmvariance,Variance ( field { ; field... } ),Aggregate
+FM VarianceP,;fmvariancep,VarianceP ( field { ; field... } ),Aggregate
+FM Extend,;fmextend,Extend ( non-repeatingField ),Repeating
+FM GetRepetition,;fmgetrepetition,GetRepetition ( repeatingField ; number ),Repeating
+FM Last,;fmlast,Last ( repeatingField ),Repeating
+FM FV,;fmfv,FV ( payment ; rate ; periods ),Financial
+FM NPV,;fmnpv,NPV ( payment ; rate ),Financial
+FM PMT,;fmpmt,PMT ( principal ; rate ; periods ),Financial
+FM PV,;fmpv,PV ( payment ; rate ; periods ),Financial
+FM Acos,;fmacos,Acos ( number ),Trigonometric
+FM Asin,;fmasin,Asin ( number ),Trigonometric
+FM Atan,;fmatan,Atan ( number ),Trigonometric
+FM Cos,;fmcos,Cos ( number ),Trigonometric
+FM Degrees,;fmdegrees,Degrees ( angleInRadians ),Trigonometric
 FM Pi,;fmpi,Pi,Trigonometric
-FM Radians,;fmradians,Radians (  ),Trigonometric
-FM Sin,;fmsin,Sin (  ),Trigonometric
-FM Tan,;fmtan,Tan (  ),Trigonometric
+FM Radians,;fmradians,Radians ( angleInDegrees ),Trigonometric
+FM Sin,;fmsin,Sin ( number ),Trigonometric
+FM Tan,;fmtan,Tan ( number ),Trigonometric
 FM Case,;fmcase,"Case (
     test1 ; result1 ;
     test2 ; result2 ;
@@ -160,26 +160,26 @@ FM Case,;fmcase,"Case (
 )",Logical
 FM Choose,;fmchoose,Choose ( test ; result0 ; result1 ; result2 ),Logical
 FM Evaluate,;fmeval,Evaluate ( expression ),Logical
-FM EvaluationError,;fmevaluationerror,EvaluationError (  ),Logical
+FM EvaluationError,;fmevaluationerror,EvaluationError ( expression ),Logical
 FM ExecuteSQL,;fmsql,"ExecuteSQL ( ""SELECT field FROM table WHERE id = ?"" ; """" ; """" ; id )",Logical
 FM ExecuteSQLe,;fmsqle,"ExecuteSQLe ( ""SELECT field FROM table WHERE id = ?"" ; """" ; """" ; id )",Logical
-FM GetAsBoolean,;fmgetasboolean,GetAsBoolean (  ),Logical
+FM GetAsBoolean,;fmgetasboolean,GetAsBoolean ( expression ),Logical
 FM GetField,;fmgetfield,GetField ( fieldName ),Logical
-FM GetNthRecord,;fmgetnthrecord,GetNthRecord (  ),Logical
-FM GetSummary,;fmgetsummary,GetSummary (  ),Logical
+FM GetNthRecord,;fmgetnthrecord,GetNthRecord ( fieldName ; recordNumber ),Logical
+FM GetSummary,;fmgetsummary,GetSummary ( summaryField ; breakField ),Logical
 FM If,;fmif,If ( test ; resultIfTrue ; resultIfFalse ),Logical
 FM IsEmpty,;fmisempty,IsEmpty ( expression ),Logical
 FM IsValid,;fmisvalid,IsValid ( expression ),Logical
-FM IsValidExpression,;fmisvalidexpression,IsValidExpression (  ),Logical
+FM IsValidExpression,;fmisvalidexpression,IsValidExpression ( expression ),Logical
 FM Let,;fmlet,"Let ( [
     var = value
 ] ;
     result
 )",Logical
-FM Lookup,;fmlookup,Lookup (  ),Logical
-FM LookupNext,;fmlookupnext,LookupNext (  ),Logical
+FM Lookup,;fmlookup,Lookup ( sourceField { ; failExpression } ),Logical
+FM LookupNext,;fmlookupnext,LookupNext ( sourceField ; lowerOrHigherFlag ),Logical
 FM Self,;fmself,Self,Logical
-FM SetRecursion,;fmsetrecursion,SetRecursion (  ),Logical
+FM SetRecursion,;fmsetrecursion,SetRecursion ( expression ; maxIterations ),Logical
 FM While,;fmwhile,"While ( [
     i = 0 ;
     result = """"
@@ -191,57 +191,57 @@ FM While,;fmwhile,"While ( [
     ] ;
     result
 )",Logical
-FM AddEmbeddings,;fmaddembeddings,AddEmbeddings (  ),AI
-FM ComputeModel,;fmcomputemodel,ComputeModel (  ),AI
-FM CosineSimilarity,;fmcosinesimilarity,CosineSimilarity (  ),AI
-FM GetEmbedding,;fmgetembedding,GetEmbedding (  ),AI
-FM GetEmbeddingAsFile,;fmgetembeddingasfile,GetEmbeddingAsFile (  ),AI
-FM GetEmbeddingAsText,;fmgetembeddingastext,GetEmbeddingAsText (  ),AI
-FM GetFieldsOnLayout,;fmgetfieldsonlayout,GetFieldsOnLayout (  ),AI
-FM GetModelAttributes,;fmgetmodelattributes,GetModelAttributes (  ),AI
-FM GetRAGSpaceInfo,;fmgetragspaceinfo,GetRAGSpaceInfo (  ),AI
-FM GetTableDDL,;fmgettableddl,GetTableDDL (  ),AI
-FM GetTokenCount,;fmgettokencount,GetTokenCount (  ),AI
-FM NormalizeEmbedding,;fmnormalizeembedding,NormalizeEmbedding (  ),AI
-FM PredictFromModel,;fmpredictfrommodel,PredictFromModel (  ),AI
-FM SubtractEmbeddings,;fmsubtractembeddings,SubtractEmbeddings (  ),AI
-FM ConvertFromFileMakerPath,;fmconvertfromfilemakerpath,ConvertFromFileMakerPath (  ),Miscellaneous
-FM ConvertToFileMakerPath,;fmconverttofilemakerpath,ConvertToFileMakerPath (  ),Miscellaneous
-FM GetAddonInfo,;fmgetaddoninfo,GetAddonInfo (  ),Miscellaneous
-FM GetBaseTableName,;fmgetbasetablename,GetBaseTableName (  ),Miscellaneous
+FM AddEmbeddings,;fmaddembeddings,AddEmbeddings ( embedding1 ; embedding2 ),AI
+FM ComputeModel,;fmcomputemodel,ComputeModel ( model ; input ),AI
+FM CosineSimilarity,;fmcosinesimilarity,CosineSimilarity ( embedding1 ; embedding2 ),AI
+FM GetEmbedding,;fmgetembedding,GetEmbedding ( account ; text ),AI
+FM GetEmbeddingAsFile,;fmgetembeddingasfile,GetEmbeddingAsFile ( account ; text ),AI
+FM GetEmbeddingAsText,;fmgetembeddingastext,GetEmbeddingAsText ( account ; text ),AI
+FM GetFieldsOnLayout,;fmgetfieldsonlayout,GetFieldsOnLayout ( layoutName ),AI
+FM GetModelAttributes,;fmgetmodelattributes,GetModelAttributes ( model ),AI
+FM GetRAGSpaceInfo,;fmgetragspaceinfo,GetRAGSpaceInfo ( space ),AI
+FM GetTableDDL,;fmgettableddl,GetTableDDL ( tableName ),AI
+FM GetTokenCount,;fmgettokencount,GetTokenCount ( text { ; model } ),AI
+FM NormalizeEmbedding,;fmnormalizeembedding,NormalizeEmbedding ( embedding ),AI
+FM PredictFromModel,;fmpredictfrommodel,PredictFromModel ( model ; input ),AI
+FM SubtractEmbeddings,;fmsubtractembeddings,SubtractEmbeddings ( embedding1 ; embedding2 ),AI
+FM ConvertFromFileMakerPath,;fmconvertfromfilemakerpath,ConvertFromFileMakerPath ( path ; format ),Miscellaneous
+FM ConvertToFileMakerPath,;fmconverttofilemakerpath,ConvertToFileMakerPath ( path ; format ),Miscellaneous
+FM GetAddonInfo,;fmgetaddoninfo,GetAddonInfo ( addonName ),Miscellaneous
+FM GetBaseTableName,;fmgetbasetablename,GetBaseTableName ( field ),Miscellaneous
 FM GetFieldName,;fmfieldname,GetFieldName ( field ),Miscellaneous
-FM GetLayoutObjectAttribute,;fmgetlayoutobjectattribute,GetLayoutObjectAttribute (  ),Miscellaneous
-FM GetLayoutObjectOwnerInfo,;fmgetlayoutobjectownerinfo,GetLayoutObjectOwnerInfo (  ),Miscellaneous
-FM GetRecordIDsFromFoundSet,;fmgetrecordidsfromfoundset,GetRecordIDsFromFoundSet (  ),Miscellaneous
-FM LayoutObjectUUID,;fmlayoutobjectuuid,LayoutObjectUUID (  ),Miscellaneous
-FM BaseTableIDs,;fmbasetableids,BaseTableIDs (  ),Design
-FM BaseTableNames,;fmbasetablenames,BaseTableNames (  ),Design
-FM DatabaseNames,;fmdatabasenames,DatabaseNames (  ),Design
-FM FieldBounds,;fmfieldbounds,FieldBounds (  ),Design
-FM FieldComment,;fmfieldcomment,FieldComment (  ),Design
-FM FieldIDs,;fmfieldids,FieldIDs (  ),Design
+FM GetLayoutObjectAttribute,;fmgetlayoutobjectattribute,GetLayoutObjectAttribute ( objectName ; attributeName { ; repetitionNumber } { ; portalRowNumber } ),Miscellaneous
+FM GetLayoutObjectOwnerInfo,;fmgetlayoutobjectownerinfo,GetLayoutObjectOwnerInfo ( objectName ),Miscellaneous
+FM GetRecordIDsFromFoundSet,;fmgetrecordidsfromfoundset,GetRecordIDsFromFoundSet ( layoutName ),Miscellaneous
+FM LayoutObjectUUID,;fmlayoutobjectuuid,LayoutObjectUUID ( objectName ),Miscellaneous
+FM BaseTableIDs,;fmbasetableids,BaseTableIDs ( fileName ),Design
+FM BaseTableNames,;fmbasetablenames,BaseTableNames ( fileName ),Design
+FM DatabaseNames,;fmdatabasenames,DatabaseNames,Design
+FM FieldBounds,;fmfieldbounds,FieldBounds ( fileName ; layoutName ; fieldName ),Design
+FM FieldComment,;fmfieldcomment,FieldComment ( fileName ; fieldName ),Design
+FM FieldIDs,;fmfieldids,FieldIDs ( fileName ; layoutName ),Design
 FM FieldNames,;fmfieldnames,FieldNames ( fileName ; layoutName ),Design
-FM FieldRepetitions,;fmfieldrepetitions,FieldRepetitions (  ),Design
-FM FieldStyle,;fmfieldstyle,FieldStyle (  ),Design
-FM FieldType,;fmfieldtype,FieldType (  ),Design
-FM GetNextSerialValue,;fmgetnextserialvalue,GetNextSerialValue (  ),Design
-FM LayoutIDs,;fmlayoutids,LayoutIDs (  ),Design
+FM FieldRepetitions,;fmfieldrepetitions,FieldRepetitions ( fileName ; layoutName ; fieldName ),Design
+FM FieldStyle,;fmfieldstyle,FieldStyle ( fileName ; layoutName ; fieldName ),Design
+FM FieldType,;fmfieldtype,FieldType ( fileName ; fieldName ),Design
+FM GetNextSerialValue,;fmgetnextserialvalue,GetNextSerialValue ( fileName ; fieldName ),Design
+FM LayoutIDs,;fmlayoutids,LayoutIDs ( fileName ),Design
 FM LayoutNames,;fmlayoutnames,LayoutNames ( fileName ),Design
-FM LayoutObjectNames,;fmlayoutobjectnames,LayoutObjectNames (  ),Design
-FM RelationInfo,;fmrelationinfo,RelationInfo (  ),Design
-FM ScriptIDs,;fmscriptids,ScriptIDs (  ),Design
+FM LayoutObjectNames,;fmlayoutobjectnames,LayoutObjectNames ( fileName ; layoutName ),Design
+FM RelationInfo,;fmrelationinfo,RelationInfo ( fileName ; tableName ),Design
+FM ScriptIDs,;fmscriptids,ScriptIDs ( fileName ),Design
 FM ScriptNames,;fmscriptnames,ScriptNames ( fileName ),Design
-FM TableIDs,;fmtableids,TableIDs (  ),Design
+FM TableIDs,;fmtableids,TableIDs ( fileName ),Design
 FM TableNames,;fmtablenames,TableNames ( fileName ),Design
-FM ValueListIDs,;fmvaluelistids,ValueListIDs (  ),Design
-FM ValueListItems,;fmvaluelistitems,ValueListItems (  ),Design
-FM ValueListNames,;fmvaluelistnames,ValueListNames (  ),Design
-FM WindowNames,;fmwindownames,WindowNames (  ),Design
-FM GetAVPlayerAttribute,;fmgetavplayerattribute,GetAVPlayerAttribute (  ),Mobile
-FM GetSensor,;fmgetsensor,GetSensor (  ),Mobile
-FM Location,;fmlocation,Location (  ),Mobile
-FM LocationValues,;fmlocationvalues,LocationValues (  ),Mobile
-FM RangeBeacons,;fmrangebeacons,RangeBeacons (  ),Mobile
+FM ValueListIDs,;fmvaluelistids,ValueListIDs ( fileName ),Design
+FM ValueListItems,;fmvaluelistitems,ValueListItems ( fileName ; valueListName ),Design
+FM ValueListNames,;fmvaluelistnames,ValueListNames ( fileName ),Design
+FM WindowNames,;fmwindownames,WindowNames { ( fileName ) },Design
+FM GetAVPlayerAttribute,;fmgetavplayerattribute,GetAVPlayerAttribute ( attributeName ),Mobile
+FM GetSensor,;fmgetsensor,GetSensor ( sensorType ),Mobile
+FM Location,;fmlocation,Location ( accuracy { ; timeout } ),Mobile
+FM LocationValues,;fmlocationvalues,LocationValues ( accuracy { ; timeout } ),Mobile
+FM RangeBeacons,;fmrangebeacons,RangeBeacons ( UUID { ; timeout } { ; major } { ; minor } ),Mobile
 FM Get(AccountExtendedPrivileges),;fmgetaccountextendedprivileges,Get ( AccountExtendedPrivileges ),Get
 FM Get(AccountGroupName),;fmgetaccountgroupname,Get ( AccountGroupName ),Get
 FM Get(AccountName),;fmgetaccountname,Get ( AccountName ),Get
